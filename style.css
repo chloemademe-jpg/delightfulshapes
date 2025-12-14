@@ -411,7 +411,7 @@ p.copyright {
   }
   .foreground_image {
     max-width: 100%;
-    margin-bottom: 80px;
+    margin: 0 16px 80px 16px;
   }
   
   .project_cols {
@@ -454,7 +454,7 @@ p.copyright {
     padding: 0; /* Ensure no extra padding is causing issues */
   }
   #copyEmailBtn {
-    font-size: 16px;
+    font-size: 17px;
     width: fit-content; /* Full width of the container */
     max-width: 100%; /* Prevent overflow */
     text-align: center; /* Center text */
@@ -506,6 +506,7 @@ p.copyright {
   h1 {
     font-size: 44px;
     line-height: 1.0em;
+    letter-spacing: -1px;
   }
   h2 {
     font-size: 34px;
