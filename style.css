@@ -233,7 +233,7 @@ section {
 }
 
 
-/* Recent Project Section */
+/* Project section */
 
 .project_cols {
   grid-column: span 3;
@@ -241,32 +241,47 @@ section {
 
 .project_cols img {
   width: 100%;
-  border-radius: 1em;
 }
 
 .project_cols p {
   margin-top: 32px;
 }
 
-/* Image Section */
-
-.reel {
-  background-color: #FDF6ED;
-  height: 100%;
-}
-
-.reel img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  -webkit-mask-image: url(https://portfolio-website-68-draft.superhi.hosting/mask.svg);
-  mask-image: url(https://portfolio-website-68-draft.superhi.hosting/mask.svg);
-  mask-size: 100%;
+.thumbnail_one {
+  background-color: #FD674F;
+  mask-image: url('assets/mask_1.svg');
+  mask-size: cover;
   mask-repeat: no-repeat;
+  mask-position: center;
+  width: 100%;
+  overflow: hidden;
 }
 
-.reel_two {
-  display: none;
+.thumbnail_two {
+  mask-image: url('assets/mask_3.svg');
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.thumbnail_three {
+  mask-image: url('assets/mask_2.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.thumbnail_four {
+  mask-image: url('assets/mask_4.svg');
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  width: 100%;
+  overflow: hidden;
 }
 
 
