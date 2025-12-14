@@ -454,7 +454,7 @@ p.copyright {
     padding: 0; /* Ensure no extra padding is causing issues */
   }
   #copyEmailBtn {
-    font-size: 20px;
+    font-size: 16px;
     width: fit-content; /* Full width of the container */
     max-width: 100%; /* Prevent overflow */
     text-align: center; /* Center text */
@@ -469,8 +469,8 @@ p.copyright {
     margin-right: 12px;
     }
     .button_social img {
-      width:32px;
-      height:32px
+      width:40px;
+      height:40px
     }
     .hero_cols h2, .footer_cols h2 {
       padding-bottom: 16px;
@@ -522,7 +522,7 @@ p.copyright {
     font-weight: 500;
   }
   .hero_text p, .footer p {
-    font-size: 20px;
+    font-size: 18px;
   }
   p.copyright {
     font-size: 16px;
