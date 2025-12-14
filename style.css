@@ -99,8 +99,8 @@ a {
 
 .button_social img {
   vertical-align: middle;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .button:hover {
@@ -321,7 +321,7 @@ section {
 }
 
 p.copyright {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
   color: #292926;
   margin-top: 20px;
