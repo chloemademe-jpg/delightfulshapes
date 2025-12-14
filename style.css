@@ -28,7 +28,7 @@ h1 {
 
 h2 {
   font-family: 'Nagoda';
-  font-size: clamp(48px, 6vw, 48px);
+  font-size: 40px;
   font-weight: 300;
   color: #242424;
   line-height: 1em;
