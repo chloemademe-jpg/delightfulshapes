@@ -330,7 +330,7 @@ section {
   background-image: url(assets/footer_shapes.svg);
   background-position: calc(100% - 0px) 0;
   background-repeat: no-repeat;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .footer p {
