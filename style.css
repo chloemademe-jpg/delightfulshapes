@@ -387,6 +387,56 @@ p.copyright {
   margin-top: 88px; /* Adds spacing from the button */
 }
 
+/*Project styles*/
+
+.project_hero_wrapped {
+  background-color: #FDC7FF;
+  margin-top: -143px;
+  padding: 112px 2.5rem 0 2.5rem;
+  place-items: center;
+}
+
+.project_hero_wrapped img, .project_hero_rebrand img, .project_hero_google img, .project_hero_dazn img {
+  grid-column: span 12;
+  width: 100%;
+  
+}
+
+.project_hero_rebrand {
+  background-color: #FDD519;
+  margin-top: -143px;
+  padding: 112px 2.5rem 0 2.5rem;
+  place-items: center;
+}
+
+.project_hero_google {
+  background-color: #2AEBA6;
+  margin-top: -143px;
+  padding: 112px 2.5rem 0 2.5rem;
+  place-items: center;
+}
+
+.project_hero_dazn {
+  background-color: #B295FF;
+  margin-top: -143px;
+  padding: 112px 2.5rem 0 2.5rem;
+  place-items: center;
+}
+
+
+
+.six_col_centre {
+  grid-column: 4 /span 6;
+}
+
+.six_col_centre h2, h3, h4 {
+  padding-bottom: 16px;
+}
+.six_col_centre img {
+  width: 100%;
+  padding-bottom: 24px;
+}
+
 /* 1023 breakpoint */
 @media (max-width: 1023px) {
 
@@ -410,6 +460,7 @@ p.copyright {
     grid-column: 1 / span 8;
     margin-bottom: 8px;
   }
+
   .hero {
     margin-top: -150px;
   }
@@ -435,6 +486,11 @@ p.copyright {
   .project_cols {
     grid-column: span 4;
   }
+
+  .six_col_centre {
+    grid-column: 2 /span 6;
+  }
+
   .footer {
     background-position: calc(138% - 0px) 0;
   }
@@ -501,6 +557,11 @@ p.copyright {
   .header_cols .footer_cols {
     grid-column: span 8;
   }
+
+  .six_col_centre {
+    grid-column: span 8;
+  }
+
   .footer {
     background-image: url(assets/footer_shapes.svg);
     background-position: top; /* Align the background image at the bottom */
@@ -627,3 +688,4 @@ p.copyright {
     grid-column: span 4;
   }
 }
+
