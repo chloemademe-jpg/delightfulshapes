@@ -568,6 +568,12 @@ p.copyright {
     grid-column: span 8;
   }
 
+  .six_col_centre img {
+    width: 100%;
+    margin-top: 16px;
+    border-radius: 16px;
+  }
+
   .footer {
     background-image: url(assets/footer_shapes.svg);
     background-position: top; /* Align the background image at the bottom */
