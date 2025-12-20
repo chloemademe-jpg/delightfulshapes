@@ -571,7 +571,7 @@ p.copyright {
   .six_col_centre img {
     width: 100%;
     margin-top: 16px;
-    border-radius: 16px;
+    border-radius: 10px;
   }
 
   .footer {
