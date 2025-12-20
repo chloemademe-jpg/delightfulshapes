@@ -456,6 +456,10 @@ p.copyright {
     padding-top: 24px;
     padding-bottom: 24px;
   }
+
+  .project_hero_wrapped {
+    margin-top: -148px;
+  }
   section {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -509,6 +513,8 @@ p.copyright {
   .button {
     margin-right: 0;
   }
+
+
   .footer_cols {
     grid-column: span 5;
   }
@@ -560,8 +566,21 @@ p.copyright {
 
 /*620*/
 @media (max-width: 620px) {
+
+
+  .site-header img {
+    height:70px;
+
+  }
   .header_cols .footer_cols {
     grid-column: span 8;
+  }
+
+  .project_hero_wrapped {
+    background-color: #FDC7FF;
+    margin-top: -138px;
+    padding: 150px 0.5rem 0 0.5rem;
+
   }
 
   .six_col_centre {
