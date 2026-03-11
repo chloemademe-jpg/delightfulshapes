@@ -5,11 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Chloe Wood &ndash; Product Design Lead</title>
 <link rel="stylesheet" href="style.css">
-<style> @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..900;1,9..40,100..900&display=swap">
 <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
 <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon//apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
 <link rel="manifest" href="assets/favicon/site.webmanifest" />
 <meta name="description" content="Chloe is a Product Design Lead based in London. Explore her portfolio, featured work, and approach to shaping delightful experiences.">
 </head>
@@ -18,44 +20,44 @@
 
 <header class="site-header">
     <div class="wrapper site-header__wrapper">    
-        <div class="site-header-start">
-            <a href="#"><img src="assets/ds_logo.svg" alt="DelightfulShapes logo" /></a>
+        <div class="site-header__start">
+            <a href="#" aria-label="DelightfulShapes — home"><img src="assets/ds_logo.svg" alt="DelightfulShapes logo" /></a>
         </div>
-    
-        <div class="site-header-end">
+
+        <div class="site-header__middle">
             <nav class="nav">
                 <ul class="nav__wrapper">
-                    <li class="nav__item"><a href="#">Home</a></li>
-                    <li class="nav__item"><a href="#">About</a></li>
+                    <li class="nav__item"><a href="#projects">Projects</a></li>
+                    <li class="nav__item"><a href="#about">About</a></li>
+                    <li class="nav__item"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+        </div>
+
+        <div class="site-header__end">
+            <a href="assets/Chloe_Wood_CV_25.pdf" download class="button button--outline" aria-label="Download CV (PDF)">Download CV</a>
         </div>
     </div>
 </header>
 
 <main>
-<section class="hero">
-    
-    <div class="hero_cols">
-        <div class="hero_text">
-            <h1>Shaping experiences that delight</h1>
-            <p>Hey, I&apos;m Chloe. I design end to end products and have over 15+ years experience working with established brands. Check out my work or get in touch!</p>
-            <div class="email-container">
-                <a href="mailto:clocopops@hotmail.co.uk" id="copyEmailBtn" class="button">Contact me</a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="hero_cols">
-        <div class="hero_images">
-            <div class="foreground_image"></div>
-        </div>
-    </div>
+<section class="hero" data-nav-bg="#FFBDB2">
 
+    <div class="hero_text">
+        <p>Product Design Lead based in London</p>
+        <h1>Shaping experiences that delight</h1>
+        <div class="foreground_image">
+            <img src="assets/burst_2.svg" class="burst" alt="">
+            <img src="assets/burst_3.svg" class="burst burst--left" alt="">
+        </div>
+    </div>
 
 </section>
+<section class="hero_graphic" data-nav-bg="#FEE8FF">
+</section>
 
-<section class="projects">
+
+<section class="projects" id="projects">
    
     <div class="heading_columns">
         <h2>Selected projects</h2>  
@@ -63,30 +65,30 @@
   
     <div class="project_cols">
         <a href="/project-spotify-wrapped.html">
-        <img src="assets/thumb_wrapped.png" class="thumbnail_two" alt="Wrapped project thumbnail">
+        <img src="assets/thumb_wrapped.png" class="thumbnail_two" alt="Wrapped project thumbnail" loading="lazy">
         <p class="label">Spotify</p>
         <h3>Expanding Spotify Wrapped&apos;s Reach</h3>
     </a>    
     </div>
     
     <div class="project_cols">
-        <a href="https://hownowcreative.com/work/dazn-global-rebranding" target="_blank">
-        <img src="assets/thumb_dazn_rebrand.png" class="thumbnail_three" alt="DAZN rebrand project thumbnail">
+        <a href="https://hownowcreative.com/work/dazn-global-rebranding" target="_blank" rel="noopener noreferrer">
+        <img src="assets/thumb_dazn_rebrand.png" class="thumbnail_three" alt="DAZN rebrand project thumbnail" loading="lazy">
         <p class="label">DAZN</p>
         <h3>A Brand Evolution for a Sport Revolution</h3>
     </a>
     </div>
 
     <div class="project_cols">
-        <a href="https://newsroom.spotify.com/2022-11-10/spotify-and-google-begin-rolling-out-user-choice-billing/" target="_blank">
-        <img src="assets/thumb_google.png" class="thumbnail_four" alt="Google project thumbnail">
+        <a href="https://newsroom.spotify.com/2022-11-10/spotify-and-google-begin-rolling-out-user-choice-billing/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/thumb_google.png" class="thumbnail_four" alt="Google project thumbnail" loading="lazy">
         <p class="label">Spotify</p>
         <h3>Giving Spotify Users More Ways to Pay for Premium</h3>             
     </a>
     </div>
 
     <div class="project_cols">
-        <img src="assets/thumb_dazn.png" class="thumbnail_one" alt="DAZN project thumbnail">
+        <img src="assets/thumb_dazn.png" class="thumbnail_one" alt="DAZN project thumbnail" loading="lazy">
       <p class="label">DAZN</p>
       <h3>Shaping the Future of Sports Streaming</h3>
     </div>
@@ -94,37 +96,32 @@
 </section>
 
 
-<section class="benefits">
+<section class="benefits" id="about">
     <div class="heading_columns">
-        <h2>Why Me?</h2>  
+        <h2>What I offer</h2>  
      </div>   
      <div class="benefit_cols">
-        <img src="assets/icon_memorable.svg" alt="Memorable icon">
+        <img src="assets/icon_memorable.svg" alt="Memorable icon" loading="lazy">
         <h3>Memorable Experiences</h3>
         <p>I use visual elements like colour, typography, and micro animations to craft memorable experiences.</p>
      </div>
-    <!-- <div class="benefit_cols">
-        <img src="assets/icon_collaboration.svg" alt="Collaboration icon">
-        <h3>Collaborative by Nature</h3>
-        <p>I believe that great experiences are created by bringing teams together around a shared vision.</p>
-     </div>--> 
     <div class="benefit_cols">
-        <img src="assets/icon_future.svg" alt="Future icon">
+        <img src="assets/icon_future.svg" alt="Future icon" loading="lazy">
         <h3>Shaping the Future</h3>
         <p>I help teams create a clear vision that guides direction, communicates value and builds a long term roadmap.</p>
      </div>
      <div class="benefit_cols">
-        <img src="assets/icon_screens.svg" alt="Responsive icon">
+        <img src="assets/icon_screens.svg" alt="Responsive icon" loading="lazy">
         <h3>Designs for Every Screen</h3>
         <p>Experience designing across platforms, from web mobile (iOS & Android), game consoles and smart TVs.</p>
      </div>
      <div class="benefit_cols"> 
-        <img src="assets/icon_users.svg" alt="Putting users first icon"> 
+        <img src="assets/icon_users.svg" alt="Putting users first icon" loading="lazy"> 
         <h3>Putting Users First</h3>
         <p>I believe great experiences come from understanding users&apos; needs then designing solutions that feel intuitive to use.</p>
      </div>
     <div class="benefit_cols">
-        <img src="assets/icon_technical.svg" alt="Technical icon">
+        <img src="assets/icon_technical.svg" alt="Technical icon" loading="lazy">
         <h3>Technical Know-How</h3>
         <p>With a solid understanding of HTML and CSS (I coded this website), I create designs that are easy for engineers to build.</p>
      </div>
@@ -132,26 +129,116 @@
 </main>
 
 <footer>
-    <section class="footer">
+    <section class="footer" id="contact">
     <div class="footer_cols">
-        <h2>Let&apos;s chat </h2>
-        <p>If you&apos;d like to discuss a project or learn more then send me an email.</p>
+        <h2>Let&apos;s shape something memorable together</h2>
         <div class="email-container">
-            <a href="mailto:clocopops@hotmail.co.uk" id="copyEmailBtn" class="button">Contact me</a>
+            <a href="mailto:clocopops@hotmail.co.uk" class="button">Contact me</a>
+                <a href="https://www.linkedin.com/in/clocopops/" class="button_social" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/icon_linkedin.svg" alt="LinkedIn icon">
+                </a>
+                <a href="https://www.instagram.com/delightfulshapes/" class="button_social" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/icon_instagram.svg" alt="Instagram icon">
+                </a>
         </div>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/clocopops/" class="button_social" target="_blank">
-                <img src="assets/icon_linkedin.svg" alt="LinkedIn icon">
-            </a>
-            <a href="https://www.instagram.com/delightfulshapes/" class="button_social" target="_blank">
-                <img src="assets/icon_instagram.svg" alt="Instagram icon">
-            </a>
-        </div>
-
-        <p class="copyright">&#169 DelightfulShapes 2024-2025. Designed and coded by me Chloe Wood</p>
+        <p class="copyright">&#169; DelightfulShapes 2024-2025. Designed and coded by Chloe Wood</p>
     </div>
     </section>
 </footer>
 
+<section class="footer_graphic">
+</section>
+
+<script>
+  history.scrollRestoration = 'manual';
+  window.scrollTo(0, 0);
+</script>
+
+<script>
+  const benefitHeading = document.querySelector('.benefits .heading_columns');
+  const cards = document.querySelectorAll('.benefit_cols');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (entry.target === benefitHeading) {
+          entry.target.style.transitionDelay = '0s';
+        } else {
+          const index = Array.from(cards).indexOf(entry.target);
+          entry.target.style.transitionDelay = `${0.25 + index * 0.08}s`;
+        }
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  observer.observe(benefitHeading);
+  cards.forEach(card => observer.observe(card));
+</script>
+
+<script>
+  const footerItems = document.querySelectorAll('.heading_columns h2, .footer_cols h2, .heading_columns, .footer_cols .email-container, .footer_cols .copyright');
+  const footerObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const index = Array.from(footerItems).indexOf(entry.target);
+        entry.target.style.transitionDelay = `${0.15 + index * 0.2}s`;
+        entry.target.classList.add('is-visible');
+        footerObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2, rootMargin: "0px 0px -20% 0px" });
+  footerItems.forEach(el => footerObserver.observe(el));
+</script>
+
+<script>
+  const header = document.querySelector('.site-header');
+  let lastY = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    if (y > lastY && y > 80) {
+      header.classList.add('site-header--hidden');
+    } else {
+      header.classList.remove('site-header--hidden');
+    }
+    lastY = y;
+  });
+</script>
+
+<script>
+  const navPill = document.querySelector('.site-header__middle');
+  const navSections = document.querySelectorAll('section[data-nav-bg]');
+
+  function updateNavColor() {
+    const navMid = 60;
+    let activeColor = '#ffffff';
+    for (const section of navSections) {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= navMid && rect.bottom >= navMid) {
+        activeColor = section.dataset.navBg;
+        break;
+      }
+    }
+    navPill.style.backgroundColor = activeColor;
+  }
+
+  window.addEventListener('scroll', updateNavColor, { passive: true });
+  updateNavColor();
+</script>
+
+<script>
+  const footerEl = document.querySelector('.footer');
+  function lerp(a, b, t) { return Math.round(a + (b - a) * t); }
+  window.addEventListener('scroll', () => {
+    const triggerStart = footerEl.offsetTop - window.innerHeight * 0.6;
+    const triggerEnd   = footerEl.offsetTop - window.innerHeight * 0.1;
+    const progress = Math.max(0, Math.min(1, (window.scrollY - triggerStart) / (triggerEnd - triggerStart)));
+    const r = lerp(253, 253, progress);
+    const g = lerp(246, 103, progress);
+    const b = lerp(237, 79,  progress);
+    document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+  }, { passive: true });
+</script>
 </body>
 </html>
