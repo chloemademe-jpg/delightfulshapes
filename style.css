@@ -814,8 +814,13 @@ p.copyright {
     height: 24px;
   }
 
+  .footer{
+    padding-bottom: 40px;
+  }
+
   .footer_graphic {
-    height: 220px;
+    height: 60px;
+    background-size: auto 360px;
   }
 
 }
