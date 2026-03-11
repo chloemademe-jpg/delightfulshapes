@@ -219,6 +219,16 @@ section {
   to   { transform: rotate(360deg); }
 }
 
+@keyframes panX {
+  from { background-position: 0 center; }
+  to   { background-position: 1200px center; }
+}
+
+@keyframes panX--top {
+  from { background-position: 0 top; }
+  to   { background-position: 1200px top; }
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -258,9 +268,10 @@ section {
   background-image: url(assets/blobs_2.svg);
   background-repeat: repeat-x;
   background-size: auto 100%;
-  background-position: center;
+  background-position: 0 center;
   height: 326px;
   margin: -270px 0 0 0;
+  animation: panX 70s linear infinite;
 }
 
 .hero_text {
@@ -455,7 +466,6 @@ section {
 }
 
 .footer {
-  padding-bottom: 100px;
   padding-top: 150px;
 }
 
@@ -502,11 +512,18 @@ p.copyright {
 }
 
 .footer_graphic {
+  display: block;
+  padding: 0;
+  height: 450px;
   background-image: url(assets/blobs_1.svg);
   background-repeat: repeat-x;
   background-size: auto 550px;
-  background-position: center top;
+  background-position: 0 top;
+  animation: panX--top 70s linear infinite;
+  overflow: hidden;
 }
+
+
 /* Project page styles */
 
 /* Shared project hero layout */
@@ -601,6 +618,7 @@ p.copyright {
 
   .hero_graphic{
     height: 266px;
+    animation: panX 70s linear infinite;
   }
 
   .project_cols {
@@ -683,6 +701,14 @@ p.copyright {
     background-color: transparent;
     padding: 0;
     border-radius: 0;
+  }
+
+  .hero_graphic {
+    animation: panX 70s linear infinite;
+  }
+
+  .footer_graphic {
+    animation: panX--top 70s linear infinite;
   }
 
 }
@@ -778,6 +804,7 @@ p.copyright {
 
   .hero_graphic {
     height: 220px;
+    animation: panX 70s linear infinite;
   }
 
   .foreground_image {
@@ -814,13 +841,10 @@ p.copyright {
     height: 24px;
   }
 
-  .footer{
-    padding-bottom: 40px;
-  }
-
   .footer_graphic {
-    height: 60px;
+    height: 300px;
     background-size: auto 360px;
+    animation: panX--top 70s linear infinite;
   }
 
 }
