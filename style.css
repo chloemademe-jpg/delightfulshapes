@@ -521,6 +521,8 @@ p.copyright {
   background-position: 0 top;
   animation: panX--top 70s linear infinite;
   overflow: hidden;
+  will-change: background-position;
+  transform: translateZ(0);
 }
 
 
