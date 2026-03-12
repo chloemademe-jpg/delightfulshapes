@@ -494,6 +494,7 @@ section {
 
 .footer {
   padding-top: 150px;
+  padding-bottom: 0;
 }
 
 .footer p {
@@ -538,11 +539,6 @@ p.copyright {
   margin-bottom: 80px;
 }
 
-.footer_gap {
-  width: 100%;
-  height: 60px;
-  background-color: #FDC7FF;
-}
 
 .footer_graphic {
   display: block;
