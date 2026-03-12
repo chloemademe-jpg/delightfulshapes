@@ -877,7 +877,7 @@ p.copyright {
   }
 
   .footer_graphic {
-    height: 250px;
+    height: 150px;
     background-size: auto 360px;
     animation: panX--top 70s linear infinite;
   }
