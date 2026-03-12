@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chloe Wood &ndash; [Project title]</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+<link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon//apple-touch-icon.png" />
+<link rel="manifest" href="assets/favicon/site.webmanifest" />
+<meta name="description" content="[Project description for SEO]">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="wrapper site-header__wrapper">
+            <div class="site-header__start">
+                <a href="index.html" aria-label="DelightfulShapes — home"><img src="assets/ds_logo.svg" alt="DelightfulShapes logo" /></a>
+            </div>
+
+            <div class="site-header__middle">
+                <nav class="nav">
+                    <ul class="nav__wrapper">
+                        <li class="nav__item"><a href="index.html#projects">Projects</a></li>
+                        <li class="nav__item"><a href="index.html#about">About</a></li>
+                        <li class="nav__item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="site-header__end">
+                <a href="assets/Chloe_Wood_CV.pdf" download class="button button--outline" aria-label="Download CV (PDF)">Download CV</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero image — swap class for the project colour: project_hero_wrapped / project_hero_rebrand / project_hero_google / project_hero_dazn -->
+    <section class="project_hero_wrapped">
+        <img src="assets/project_hero_wrapped.webp" alt="[Project name] hero image">
+    </section>
+
+    <!-- ─── Two-column layout ─────────────────────────────── -->
+    <div class="case-study-layout">
+
+        <!-- Sticky sidebar -->
+        <aside class="case-study-sidebar">
+            <p class="case-study-sidebar__title">[Project title]</p>
+            <nav class="case-study-nav">
+                <a href="#overview" class="case-study-nav__link">Overview</a>
+                <a href="#problem" class="case-study-nav__link">Problem</a>
+                <a href="#process" class="case-study-nav__link">Process</a>
+                <a href="#impact" class="case-study-nav__link">Impact</a>
+            </nav>
+        </aside>
+
+        <!-- Scrollable content -->
+        <div class="case-study-content">
+
+            <!-- ─── Overview ───────────────────────────────── -->
+            <section id="overview" class="case-study-section">
+                <p class="label">[Company / Client]</p>
+                <h2>[Project title]</h2>
+                <p>[One to two sentence summary of the project. What it was, what you did, and the headline outcome.]</p>
+
+                <!-- Metadata row -->
+                <div class="case-study-meta">
+                    <div class="case-study-meta__item">
+                        <span class="case-study-meta__label">Role</span>
+                        <span class="case-study-meta__value">[Your role]</span>
+                    </div>
+                    <div class="case-study-meta__item">
+                        <span class="case-study-meta__label">Team</span>
+                        <span class="case-study-meta__value">[Team size &amp; disciplines]</span>
+                    </div>
+                    <div class="case-study-meta__item">
+                        <span class="case-study-meta__label">Timeline</span>
+                        <span class="case-study-meta__value">[Duration, e.g. 3 months]</span>
+                    </div>
+                    <div class="case-study-meta__item">
+                        <span class="case-study-meta__label">Tools</span>
+                        <span class="case-study-meta__value">[Figma, Maze, etc.]</span>
+                    </div>
+                </div>
+
+                <img src="assets/hero_image.webp" alt="[Description of image]" class="case-study-image">
+            </section>
+
+            <!-- ─── Problem & Opportunity ──────────────────── -->
+            <section id="problem" class="case-study-section">
+                <p class="label">Problem &amp; Opportunity</p>
+                <h2>[What was the problem?]</h2>
+                <p>[Describe the problem users were experiencing. Be specific — who was affected, how often, and what the consequence was.]</p>
+                <p>[Describe the opportunity. Why was this the right moment to solve it? What was at stake for the business or users if left unsolved?]</p>
+
+                <!-- Callout: key insight or problem statement -->
+                <div class="case-study-callout">
+                    <p>&ldquo;[Insert a key insight, user quote, or problem statement that captures the core issue.]&rdquo;</p>
+                </div>
+
+                <img src="assets/InApp_Genreverse.webp" alt="[Description of image]" class="case-study-image">
+            </section>
+
+            <!-- ─── Ideation & Process ─────────────────────── -->
+            <section id="process" class="case-study-section">
+                <p class="label">Ideation &amp; Process</p>
+                <h2>[How did you approach solving it?]</h2>
+                <p>[Brief intro to your process — what methods or frameworks you used, how the team was structured, and how you moved from problem to solution.]</p>
+
+                <!-- Step 01 -->
+                <div class="case-study-step">
+                    <span class="case-study-step__number">01</span>
+                    <h3>[Step name, e.g. Research &amp; Discovery]</h3>
+                </div>
+                <p>[What you did in this phase. Who you spoke to, what you found, what assumptions you challenged.]</p>
+                <video src="assets/InApp_Welcome.mp4" autoplay muted loop playsinline class="case-study-image"></video>
+
+                <!-- Step 02 -->
+                <div class="case-study-step">
+                    <span class="case-study-step__number">02</span>
+                    <h3>[Step name, e.g. Defining the Direction]</h3>
+                </div>
+                <p>[What you did in this phase. How you synthesised findings, defined success, and aligned stakeholders.]</p>
+                <img src="assets/InApp_Minutes-Share.webp" alt="[Description of image]" class="case-study-image">
+
+                <!-- Step 03 -->
+                <div class="case-study-step">
+                    <span class="case-study-step__number">03</span>
+                    <h3>[Step name, e.g. Designing &amp; Iterating]</h3>
+                </div>
+                <p>[What you designed, how you tested it, what you changed and why. Include how you handled constraints or trade-offs.]</p>
+                <video src="assets/InApp_Audio-Day.mp4" autoplay muted loop playsinline class="case-study-image"></video>
+
+                <!-- Step 04 — duplicate or remove as needed -->
+                <div class="case-study-step">
+                    <span class="case-study-step__number">04</span>
+                    <h3>[Step name, e.g. Final Solution]</h3>
+                </div>
+                <p>[Describe the shipped design. What decisions were made, what was cut, and why the final solution addressed the original problem.]</p>
+                <video src="assets/InApp_Music-Personality.mp4" autoplay muted loop playsinline class="case-study-image"></video>
+            </section>
+
+            <!-- ─── Impact & Outcomes ──────────────────────── -->
+            <section id="impact" class="case-study-section">
+                <p class="label">Impact &amp; Outcomes</p>
+                <h2>[What changed as a result?]</h2>
+                <p>[Summarise the impact. Lead with the most compelling result, then give context around how you measured success.]</p>
+                <p>[Note any constraints on sharing (NDA, internal metrics) and offer to discuss further in conversation.]</p>
+
+                <!-- Stats row: add or remove items as needed -->
+                <div class="impact-stats">
+                    <div class="impact-stats__item">
+                        <span class="impact-stats__number">[+X%]</span>
+                        <span class="impact-stats__label">[Metric, e.g. increase in engagement]</span>
+                    </div>
+                    <div class="impact-stats__item">
+                        <span class="impact-stats__number">[Xm]</span>
+                        <span class="impact-stats__label">[Metric, e.g. users reached at launch]</span>
+                    </div>
+                    <div class="impact-stats__item">
+                        <span class="impact-stats__number">[Award]</span>
+                        <span class="impact-stats__label">[e.g. Webby Award, Gold Lion]</span>
+                    </div>
+                </div>
+
+                <img src="assets/InApp_Top-5-Artist-01.webp" alt="[Description of image]" class="case-study-image">
+            </section>
+
+        </div><!-- /case-study-content -->
+    </div><!-- /case-study-layout -->
+
+    <!-- ─── Next project ──────────────────────────────────── -->
+    <section class="next-project">
+        <a href="[next-project.html]" class="next-project__link">
+            <div class="next-project__inner">
+                <span class="next-project__label">Next project</span>
+                <span class="next-project__title">[Next project name] &rarr;</span>
+            </div>
+            <img src="assets/thumb_dazn.webp" alt="[Next project name] thumbnail" class="next-project__thumb">
+        </a>
+    </section>
+
+    <footer>
+        <section class="footer" id="contact">
+        <div class="footer_cols">
+            <h2>Let&apos;s shape something memorable together</h2>
+            <div class="email-container">
+                <a href="mailto:clocopops@hotmail.co.uk" class="button">Contact me</a>
+                    <a href="https://www.linkedin.com/in/clocopops/" class="button_social" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icon_linkedin.svg" alt="LinkedIn icon">
+                    </a>
+                    <a href="https://www.instagram.com/delightfulshapes/" class="button_social" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icon_instagram.svg" alt="Instagram icon">
+                    </a>
+            </div>
+            <p class="copyright">&#169; DelightfulShapes 2024-2025. Designed and coded by Chloe Wood</p>
+        </div>
+        </section>
+    </footer>
+
+    <section class="footer_graphic">
+    </section>
+    <div class="footer_fill"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

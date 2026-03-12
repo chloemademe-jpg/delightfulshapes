@@ -28,7 +28,7 @@ h1 {
 
 h2 {
   font-family: 'Nagoda', sans-serif;
-  font-size: clamp(48px, 5vw, 64px);
+  font-size: clamp(48px, 5vw, 52px);
   font-weight: 300;
   color: #242424;
   line-height: 1.15;
@@ -45,8 +45,8 @@ h3 {
 
 body {
   font-family: "DM Sans", sans-serif;
-  font-size: 17px;
-  line-height: 1.6;
+  font-size: 19px;
+  line-height: 1.7;
   color: #242424;
   background-color: #FDF6ED;
   display: flex;
@@ -900,6 +900,213 @@ p.copyright {
 
 
 }
+
+/* ─── Case study template ─────────────────────────────── */
+
+.full_width_image {
+  grid-column: 1 / -1;
+  margin-top: 40px;
+}
+
+.full_width_image img,
+.full_width_image video {
+  width: 100%;
+  border-radius: 24px;
+  display: block;
+}
+
+.case-study-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.case-study-meta__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px 20px;
+  min-width: 120px;
+}
+
+.case-study-meta__label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #656360;
+  margin-bottom: 4px;
+}
+
+.case-study-meta__value {
+  font-size: 15px;
+  font-weight: 500;
+  color: #242424;
+}
+
+.case-study-step {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 16px;
+  margin-top: 56px;
+}
+
+.case-study-step__number {
+  font-size: 13px;
+  font-weight: 600;
+  color: #656360;
+  letter-spacing: 0.8px;
+  flex-shrink: 0;
+}
+
+.case-study-step h3 {
+  font-family: 'Nagoda', sans-serif;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 300;
+  color: #242424;
+  letter-spacing: -0.8px;
+  line-height: 110%;
+}
+
+.case-study-callout {
+  background-color: #FDC7FF;
+  border-radius: 24px;
+  padding: 40px;
+  margin-top: 40px;
+  grid-column: 1 / -1;
+}
+
+.case-study-callout p {
+  font-size: clamp(20px, 2.5vw, 28px);
+  line-height: 1.4;
+  color: #242424;
+  padding-bottom: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.impact-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 40px;
+  grid-column: 1 / -1;
+}
+
+.impact-stats__item {
+  flex: 1;
+  min-width: 160px;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 32px;
+  text-align: center;
+}
+
+.impact-stats__number {
+  font-family: 'Nagoda', sans-serif;
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 300;
+  color: #242424;
+  letter-spacing: -1.5px;
+  line-height: 100%;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.impact-stats__label {
+  font-size: 14px;
+  color: #656360;
+  font-weight: 500;
+}
+
+@media (max-width: 620px) {
+  .case-study-meta {
+    flex-direction: column;
+  }
+
+  .case-study-meta__item {
+    width: 100%;
+  }
+
+  .impact-stats {
+    flex-direction: column;
+  }
+
+  .case-study-callout {
+    padding: 24px;
+  }
+}
+
+.next-project {
+  padding: 0;
+  display: block;
+}
+
+.next-project__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 64px 2.5rem;
+  background-color: #FDF6ED;
+  text-decoration: none;
+  gap: 40px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.next-project__link:hover {
+  background-color: #FEE8FF;
+}
+
+.next-project__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.next-project__label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #656360;
+}
+
+.next-project__title {
+  font-family: 'Nagoda', sans-serif;
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 300;
+  color: #242424;
+  letter-spacing: -1px;
+  line-height: 110%;
+}
+
+.next-project__thumb {
+  width: 200px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 620px) {
+  .next-project__link {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 48px 1.5rem;
+  }
+
+  .next-project__thumb {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* ───────────────────────────────────────────────────────── */
 
 @media (prefers-reduced-motion: reduce) {
   .hero_graphic,
