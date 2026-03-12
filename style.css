@@ -538,9 +538,19 @@ p.copyright {
   margin-bottom: 80px;
 }
 
+.footer_gap {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #FDC7FF;
+}
+
 .footer_graphic {
   display: block;
   padding: 0;
+  position: relative;
   height: 450px;
   background-image: url(assets/blobs_1.svg);
   background-repeat: repeat-x;
