@@ -1,0 +1,131 @@
+/* ─── Project hero ─────────────────────────────────────── */
+
+.project_hero_wrapped,
+.project_hero_rebrand,
+.project_hero_google,
+.project_hero_dazn {
+  padding: 140px 2.5rem 0 2.5rem;
+}
+
+.project_hero_wrapped img,
+.project_hero_rebrand img,
+.project_hero_google img,
+.project_hero_dazn img {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.project_hero_wrapped { background-color: #FDC7FF; }
+.project_hero_rebrand { background-color: #FDD519; }
+.project_hero_google  { background-color: #2AEBA6; }
+.project_hero_dazn    { background-color: #B295FF; }
+
+/* ─── Article layout — text narrow, media wide ─────────── */
+
+.six_col_centre {
+  grid-column: 2 / span 10;
+}
+
+.six_col_centre h2,
+.six_col_centre h3 {
+  padding-bottom: 16px;
+}
+
+.six_col_centre p {
+  padding-bottom: 16px;
+}
+
+.six_col_centre img,
+.six_col_centre video {
+  width: 100%;
+  margin-top: 24px;
+  border-radius: 24px;
+}
+
+.article__text {
+  grid-column: 4 / span 6;
+  padding-bottom: 32px;
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.article__text.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.article__text h2 {
+  padding-bottom: 16px;
+}
+
+.article__text p {
+  padding-bottom: 16px;
+}
+
+.article__media {
+  grid-column: 2 / span 10;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.article {
+  gap: 24px;
+}
+
+/* ─── Responsive ───────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .six_col_centre {
+    grid-column: 2 / span 6;
+  }
+
+  .article__text {
+    grid-column: 2 / span 6;
+  }
+
+  .article__media {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 620px) {
+  .project_hero_wrapped {
+    padding: 150px 0.5rem 0 0.5rem;
+  }
+
+  .six_col_centre {
+    grid-column: span 8;
+  }
+
+  .six_col_centre img {
+    width: 100%;
+    margin-top: 16px;
+    border-radius: 10px;
+  }
+
+  .article__text {
+    grid-column: span 8;
+  }
+
+  .article__media {
+    grid-column: 1 / -1;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  section {
+    padding: 64px 16px;
+    gap: 16px;
+  }
+
+  .six_col_centre {
+    grid-column: span 4;
+  }
+
+  .article__text {
+    grid-column: span 4;
+  }
+}
