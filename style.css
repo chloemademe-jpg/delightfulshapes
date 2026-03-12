@@ -877,6 +877,8 @@ p.copyright {
     height: 300px;
     background-size: auto 360px;
     animation: panX--top 70s linear infinite;
+    padding: 0;
+    margin: 0;
   }
 
 }
