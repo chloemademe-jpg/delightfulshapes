@@ -899,3 +899,10 @@ p.copyright {
 
 
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero_graphic,
+  .footer_graphic {
+    animation: none;
+  }
+}
