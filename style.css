@@ -547,6 +547,7 @@ p.copyright {
 .footer_graphic {
   display: block;
   padding: 0;
+  position: relative;
   height: 450px;
   background-image: url(assets/blobs_1.svg);
   background-repeat: repeat-x;
@@ -877,7 +878,7 @@ p.copyright {
   }
 
   .footer_graphic {
-    height: 150px;
+    height: 300px;
     background-size: auto 360px;
     animation: panX--top 70s linear infinite;
   }
