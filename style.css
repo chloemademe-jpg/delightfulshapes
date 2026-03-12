@@ -219,6 +219,11 @@ section {
   to   { transform: rotate(360deg); }
 }
 
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+
 @keyframes panX {
   from { background-position: 0 center; }
   to   { background-position: 1200px center; }
@@ -226,7 +231,7 @@ section {
 
 @keyframes panX--top {
   from { background-position: 0 top; }
-  to   { background-position: 1200px top; }
+  to   { background-position: 701px top; }
 }
 
 @keyframes fadeUp {
@@ -335,7 +340,13 @@ section {
 
 .project_cols {
   grid-column: span 3;
+  animation: float 6s ease-in-out infinite;
 }
+
+.project_cols:nth-child(2) { animation-delay: 0s; }
+.project_cols:nth-child(3) { animation-delay: -1.5s; }
+.project_cols:nth-child(4) { animation-delay: -3s; }
+.project_cols:nth-child(5) { animation-delay: -4.5s; }
 
 .project_cols img {
   width: 100%;
@@ -353,7 +364,6 @@ section {
   mask-repeat: no-repeat;
   mask-position: center;
   width: 100%;
-  overflow: hidden;
 }
 
 .thumbnail_one {
