@@ -540,7 +540,7 @@ p.copyright {
 
 .footer_graphic {
   display: block;
-  padding: 0;
+  padding: 0 0 env(safe-area-inset-bottom);
   height: 450px;
   background-image: url(assets/blobs_1.svg);
   background-repeat: repeat-x;
