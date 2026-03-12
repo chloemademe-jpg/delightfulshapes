@@ -9,6 +9,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 72px;
+  background-color: #FDC7FF;
 }
 
 * {
@@ -542,6 +543,7 @@ p.copyright {
   display: block;
   padding: 0 0 env(safe-area-inset-bottom);
   height: 450px;
+  background-color: #FDC7FF;
   background-image: url(assets/blobs_1.svg);
   background-repeat: repeat-x;
   background-size: auto 550px;
