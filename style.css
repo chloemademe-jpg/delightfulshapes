@@ -539,9 +539,6 @@ p.copyright {
 }
 
 .footer_gap {
-  position: absolute;
-  bottom: -60px;
-  left: 0;
   width: 100%;
   height: 60px;
   background-color: #FDC7FF;
@@ -550,7 +547,6 @@ p.copyright {
 .footer_graphic {
   display: block;
   padding: 0;
-  position: relative;
   height: 450px;
   background-image: url(assets/blobs_1.svg);
   background-repeat: repeat-x;
@@ -881,7 +877,7 @@ p.copyright {
   }
 
   .footer_graphic {
-    height: 300px;
+    height: 250px;
     background-size: auto 360px;
     animation: panX--top 70s linear infinite;
   }
