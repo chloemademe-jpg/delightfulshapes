@@ -890,8 +890,8 @@ p.copyright {
   }
 
   .footer_graphic {
-    min-height: 200px;
-    background-size: auto 401px;
+    min-height: 300px;
+    background-size: auto 500px;
     animation: panX--footer 60s linear infinite;
     padding: 0;
     margin: 0;
