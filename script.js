@@ -68,6 +68,20 @@ const footerObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.2, rootMargin: "0px 0px -20% 0px" });
 footerItems.forEach(el => footerObserver.observe(el));
 
+// Intersection observer — project page article fade in
+const articleEls = document.querySelectorAll('.article__text, .article__media');
+if (articleEls.length) {
+  const articleObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        articleObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  articleEls.forEach(el => articleObserver.observe(el));
+}
+
 // Header hide/show on scroll
 const header = document.querySelector('.site-header');
 let lastY = 0;
