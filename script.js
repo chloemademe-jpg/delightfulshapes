@@ -50,7 +50,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.15 });
 
-observer.observe(benefitHeading);
+if (benefitHeading) observer.observe(benefitHeading);
 cards.forEach(card => observer.observe(card));
 projectCols.forEach(col => observer.observe(col));
 

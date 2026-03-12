@@ -18,17 +18,22 @@
 
     <header class="site-header">
         <div class="wrapper site-header__wrapper">    
-            <div class="site-header-start">
-                <a href="index.html"><img src="assets/ds_logo.svg" alt="DelightfulShapes logo" /></a>
+            <div class="site-header__start">
+                <a href="index.html" aria-label="DelightfulShapes — home"><img src="assets/ds_logo.svg" alt="DelightfulShapes logo" /></a>
             </div>
-        
-            <div class="site-header-end">
+    
+            <div class="site-header__middle">
                 <nav class="nav">
                     <ul class="nav__wrapper">
-                        <li class="nav__item"><a href="#">Home</a></li>
-                        <li class="nav__item"><a href="#">About</a></li>
+                        <li class="nav__item"><a href="index.html#projects">Projects</a></li>
+                        <li class="nav__item"><a href="index.html#about">About</a></li>
+                        <li class="nav__item"><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
+            </div>
+    
+            <div class="site-header__end">
+                <a href="assets/Chloe_Wood_CV.pdf" download class="button button--outline" aria-label="Download CV (PDF)">Download CV</a>
             </div>
         </div>
     </header>
@@ -56,27 +61,27 @@
     </section>
    
     <footer>
-        <section class="footer">
+        <section class="footer" id="contact">
         <div class="footer_cols">
-            <h2>Let&apos;s chat </h2>
-            <p>If you&apos;d like to discuss a project or learn more then send me an email.</p>
+            <h2>Let&apos;s shape something memorable together</h2>
             <div class="email-container">
-                <a href="mailto:clocopops@hotmail.co.uk" id="copyEmailBtn" class="button">Contact me</a>
+                <a href="mailto:clocopops@hotmail.co.uk" class="button">Contact me</a>
+                    <a href="https://www.linkedin.com/in/clocopops/" class="button_social" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icon_linkedin.svg" alt="LinkedIn icon">
+                    </a>
+                    <a href="https://www.instagram.com/delightfulshapes/" class="button_social" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icon_instagram.svg" alt="Instagram icon">
+                    </a>
             </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/clocopops/" class="button_social" target="_blank">
-                    <img src="assets/icon_linkedin.svg" alt="LinkedIn icon">
-                </a>
-                <a href="https://www.instagram.com/delightfulshapes/" class="button_social" target="_blank">
-                    <img src="assets/icon_instagram.svg" alt="Instagram icon">
-                </a>
-            </div>
-    
-            <p class="copyright">&#169 DelightfulShapes 2024-2025. Designed and coded by me Chloe Wood</p>
+            <p class="copyright">&#169; DelightfulShapes 2024-2025. Designed and coded by Chloe Wood</p>
         </div>
         </section>
     </footer>
     
+    <section class="footer_graphic">
+    </section>
+    
 
+<script src="script.js" defer></script>
 </body>
 </html>
