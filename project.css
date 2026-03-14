@@ -25,7 +25,7 @@
 .project-sidebar {
   grid-column: 1 / span 2;
   position: sticky;
-  top: 100px;
+  top: 132px;
   align-self: start;
 }
 
@@ -112,9 +112,6 @@
 /* ─── Responsive ───────────────────────────────────────── */
 
 @media (max-width: 1024px) {
-  .project-sidebar {
-    grid-column: 1 / span 2;
-  }
 
   .project-content {
     grid-column: 3 / span 6;
