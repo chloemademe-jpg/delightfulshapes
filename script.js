@@ -82,6 +82,22 @@ if (articleEls.length) {
   articleEls.forEach(el => articleObserver.observe(el));
 }
 
+// Intersection observer — two-column layout sidebar nav active state
+const projectSections = document.querySelectorAll('.project-section[id]');
+const projectNavLinks = document.querySelectorAll('.project-nav__link');
+if (projectSections.length && projectNavLinks.length) {
+  const sidebarObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        projectNavLinks.forEach(link => link.classList.remove('is-active'));
+        const active = document.querySelector(`.project-nav__link[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-10% 0px -60% 0px' });
+  projectSections.forEach(section => sidebarObserver.observe(section));
+}
+
 // Header hide/show on scroll
 const header = document.querySelector('.site-header');
 let lastY = 0;

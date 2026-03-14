@@ -47,6 +47,7 @@ h3 {
   margin-bottom: 10px;
 }
 
+
 body {
   font-family: "DM Sans", sans-serif;
   font-size: 19px;
@@ -63,10 +64,16 @@ p {
 }
 
 .label {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 550;
   padding-bottom: 8px;
   color: #656360;
+}
+
+.emphasised {
+  font-size: 22px;
+  font-weight: 500;
+  padding-bottom: 32px;
 }
 
 a {
@@ -466,10 +473,6 @@ section {
 
 footer {
   margin: 0;
-  padding: 0;
-}
-
-.footer {
   padding-top: 150px;
   padding-bottom: 100px;
 }
@@ -620,6 +623,7 @@ p.copyright {
 @media (max-width: 768px) {
   .button {
     margin-right: 0;
+    padding: 20px 28px;
   }
 
   p.copyright {
@@ -629,10 +633,6 @@ p.copyright {
   .label {
     font-size: 16px;
     font-weight: 500;
-  }
-
-  button {
-    padding: 20px 28px;
   }
 
   .email-container {
@@ -693,11 +693,6 @@ p.copyright {
 }
 
 @media (max-width: 620px) {
-  .project_hero_wrapped {
-    background-color: #FDC7FF;
-    padding: 150px 0.5rem 0 0.5rem;
-  }
-
   .footer p {
     padding-bottom: 28px;
   }

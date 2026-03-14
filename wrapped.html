@@ -6,10 +6,13 @@
 <title>Chloe Wood &ndash; Product Design Lead</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="project.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..900;1,9..40,100..900&display=swap">
 <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
 <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon//apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
 <link rel="manifest" href="assets/favicon/site.webmanifest" />
 <meta name="description" content="Chloe Wood led the design of Spotify's 2022 Wrapped in-product experience — winner of two Webby Awards and a Cannes Gold Lion.">
 </head>
@@ -17,21 +20,22 @@
 <body>
 
     <header class="site-header">
-        <div class="wrapper site-header__wrapper">    
+        <div class="wrapper site-header__wrapper">
             <div class="site-header__start">
                 <a href="index.html" aria-label="DelightfulShapes — home"><img src="assets/ds_logo.svg" alt="DelightfulShapes logo" /></a>
             </div>
-    
+
             <div class="site-header__middle">
                 <nav class="nav">
                     <ul class="nav__wrapper">
-                        <li class="nav__item"><a href="index.html#projects">Projects</a></li>
-                        <li class="nav__item"><a href="index.html#about">About</a></li>
+                        <li class="nav__item"><a href="index.html">Home</a></li>
+                        <li class="nav__item"><a href="#projects">Projects</a></li>
+                        <li class="nav__item"><a href="#about">About</a></li>
                         <li class="nav__item"><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
-    
+
             <div class="site-header__end">
                 <a href="assets/Chloe_Wood_CV.pdf" download class="button button--outline" aria-label="Download CV (PDF)">Download CV</a>
             </div>
@@ -39,27 +43,52 @@
     </header>
 
     <section class="project_hero_wrapped">
-            <img src="assets/project_hero_wrapped.webp" alt="Spotify Wrapped 2022 hero image">
+        <img src="assets/project_hero_wrapped.webp" alt="Spotify Wrapped 2022 hero image">
     </section>
 
-    <section class="article">
-        <div class="article__text">
-            <p class="label">Spotify</p>
-            <h2>Expanding Spotify Wrapped's reach</h2>
-            <p>I led a team of Product Designers, UX Writers, and Motion Designers to craft Spotify's 2022 Wrapped in-product experience, working hand-in-hand with Brand. Together with product and engineering leads, we dug into what didn't work in 2021 and shaped a better experience for 2022, making sure we shipped on time.</p>
-            <p>We discovered that too many eligible users had missed out on their 2021 Wrapped, so we made it our mission to bring them back. We redesigned the experience to be more accessible, delightful, and shareable to spread the word.</p>
-            <p>The results? Within 48 hours of launch, 2022 Wrapped blew past the previous year's numbers. We also took home two Webby Awards (Best Mobile Visual Design – Aesthetic and Best Branded Editorial Experience) and a Gold Lion at Cannes.</p>
-            <p>Due to NDA, I can't share specific metrics or internal processes. Happy to discuss my approach and learnings in more detail during a conversation.</p>
+    <!-- ─── Two-column layout ─────────────────────────── -->
+    <section class="project-layout">
+
+        <div class="project-sidebar">
+            <nav class="project-nav">
+                <a href="#overview" class="project-nav__link">Overview</a>
+                <a href="#delivery" class="project-nav__link">Delivery</a>
+            </nav>
         </div>
-        <video src="assets/InApp_Welcome.mp4" autoplay muted loop playsinline class="article__media"></video>
+
+        <div class="project-content">
+
+            <section id="overview" class="project-section">
+                <p class="label">Spotify</p>
+                <h1>Expanding Spotify Wrapped's reach</h1>
+                <p class="emphasised">I led a team of Product Designers, UX Writers, and Motion Designers to craft Spotify's 2022 Wrapped in-product experience, working hand-in-hand with Brand. Together with product and engineering leads, we dug into what didn't work in 2021 and shaped a better experience for 2022, making sure we shipped on time.</p>
+                 <p class="emphasised">Due to NDA, I can't share specific metrics or internal processes. Happy to discuss my approach and learnings in more detail during a conversation.        </p>
+                <div class="project-meta">
+                    <div class="project-meta__item">
+                        <p class="label">Role</p>
+                        <p>Lead Product Designer</p>
+                    </div>
+                    <div class="project-meta__item">
+                        <p class="label">Year</p>
+                        <p>2022</p>
+                    </div>
+                </div>
+                </section>
+
+            <section id="delivery" class="project-section">
+                <video src="assets/InApp_Welcome.mp4" autoplay muted loop playsinline class="article__media"></video>
         <img src="assets/InApp_Genreverse.webp" alt="Spotify Wrapped genre reverse screen" class="article__media">
         <video src="assets/InApp_Audio-Day.mp4" autoplay muted loop playsinline class="article__media"></video>
         <img src="assets/InApp_Minutes-Share.webp" alt="Spotify Wrapped minutes share screen" class="article__media">
         <video src="assets/InApp_Music-Personality.mp4" autoplay muted loop playsinline class="article__media"></video>
         <img src="assets/InApp_Top-5-Artist-01.webp" alt="Spotify Wrapped top 5 artists screen" class="article__media">
         <img src="assets/InApp_Top-5-Podcast-02-Say-Thanks.webp" alt="Spotify Wrapped top podcasts screen" class="article__media">
+   </section>
+                  
+
+        </div>
     </section>
-   
+
     <footer>
         <section class="footer" id="contact">
         <div class="footer_cols">
@@ -77,7 +106,7 @@
         </div>
         </section>
     </footer>
-    
+
     <section class="footer_graphic">
     </section>
     <div class="footer_fill"></div>
